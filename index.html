@@ -22,6 +22,9 @@
             // Fallback a Google Maps per altri dispositivi
             window.location.href = `https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=${destinationLatitude},${destinationLongitude}`;
         }
+        setTimeout(function() {
+    window.open('','_self').close();
+}, 250); // Ritardo di un secondo per permettere il reindirizzamento
     </script>
 </body>
 </html>
